@@ -1,0 +1,36 @@
+<div class="container">
+    <h1 class="title my-4 text-center">
+        {{loadedBlogDetail.title}}
+    </h1>
+    <div class="row">
+        <div class="col-12 blog-600">
+            <img src="{{loadedBlogDetail.banner}}" class="img-fluid rounded" alt="" srcset="">
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-6 blog-300">
+                <img src="{{loadedBlogDetail.image1}}" alt="" class="img-fluid rounded" srcset="">
+            </div>
+            <div class="col-6 blog-300">
+                <img src="{{loadedBlogDetail.image2}}" alt="" class="img-fluid rounded" srcset="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="intro my-3 mb-4 text-justify">
+                {{loadedBlogDetail.intro}}
+            </div>
+            <div class="sub-heading my-4 text-justify">
+                <h3 class="my-3">{{loadedBlogDetail.subheading1}}</h3>
+                <p>{{loadedBlogDetail.para1}}</p>
+            </div>
+            <div class="sub-heading my-4">
+                <h4 class="my-3">{{loadedBlogDetail.subheading2}}</h4>
+                <p>{{loadedBlogDetail.para2}}</p>
+            </div>
+            <div class="conclusion">
+                <p>{{loadedBlogDetail.conclusion}}</p>
+            </div>
+        </div>
+    </div>
+</div>

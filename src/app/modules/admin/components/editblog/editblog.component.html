@@ -1,0 +1,40 @@
+<form [formGroup]="editForm" (ngSubmit)="submitUpdate()">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Title</label>
+    <input type="text" class="form-control" formControlName="title" id="exampleInputEmail1"
+      aria-describedby="emailHelp">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Introduction</label>
+    <textarea class="form-control" formControlName="intro" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Subheading 1</label>
+    <input type="text" class="form-control" formControlName="subheading1" id="exampleInputEmail1"
+      aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Paragraph 1</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" formControlName="para1" rows="3"></textarea>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Subheading 2</label>
+    <input type="text" class="form-control" formControlName="subheading2"  id="exampleInputEmail1"
+      aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Paragraph 2</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" formControlName="para2" rows="3"></textarea>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Conclusion</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" formControlName="conclusion" rows="3"></textarea>
+  </div>
+  
+
+  <button type="submit" class="btn btn-primary mb-5">Submit</button>
+</form>
